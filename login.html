@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <section id="header">
@@ -17,69 +18,29 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a class="active" href="login.html"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </div>
-    </section>
+    </section>    
 
-    <section id="page-headers" class="about-header">
-        <h2>#AboutUs</h2>
-        <p>Read more about our trends!! </p>
-    </section>
-
-    <section id="about-head" class="section-p1">
-        <img src="img/about/a6.jpg" alt="">
-        <div>
-            <h2>Who are we??</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-               when an unknown printer took a galley of type and scrambled it to make a type 
-               specimen book. It has survived not only five centuries, but also the leap into 
-               electronic typesetting, remaining essentially unchanged. It was popularised in 
-               the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-               and more recently with desktop publishing software like Aldus PageMaker 
-               including versions of Lorem Ipsum.</p>
-        </div>
-    </section>
-
-    <section id="about-app" class="section-p1">
-        <h1>Download our App</h1>
-        <div class="video">
-            <video autoplay muted loop src="img/about/1.mp4"></video>
-        </div>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Save Money</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Happy Sell</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>24/7 Support</h6>
+    <section id="login">
+        <div class="pro-container">
+            <div class="pro">
+                <div class="des">
+                    <div class="input-group">
+                        <!-- <label for="username">Username</label> -->
+                        <input type="text" id="username" placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <!-- <label for="password">Password</label> -->
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <button class="login-btn" onclick="validateLogin()">Login</button>
+                    <div id="error-message" style="color: red; margin-top: 10px;"></div>
+                </div>
+            </div>
         </div>
     </section>
     
